@@ -1,6 +1,8 @@
 ﻿using System;
 using ICB.Models;
 using ICB.Repositories.Interfaces;
+using System.Runtime.CompilerServices;
+[assembly: InternalsVisibleTo("ICB.Tests")]
 
 namespace ICB.Services
 {
@@ -11,9 +13,25 @@ namespace ICB.Services
 		public CardService(ICardRepository cardRepository)
 		{
 			_cardRepository = cardRepository;
+			SetDeck();
 		}
 
-		public List<Characteristic> GetCharacteristics()
+		internal List<Characteristic> _deck;
+
+
+		public Characteristic Next()
+        {
+			var first = _deck.First();
+			_deck.RemoveAll(x => x.Id == first.Id);
+			return first;
+        }
+
+		private void SetDeck()
+        {
+			_deck = GetCharacteristics();
+        }
+
+		private List<Characteristic> GetCharacteristics()
         {
 			var list = _cardRepository.GetCharacteristics();
 			return Shuffle(list);
