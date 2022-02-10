@@ -1,0 +1,10 @@
+﻿@page "/individual"
+
+<h3>Component1</h3>
+
+@if (Characteristic is not null)
+    {
+        <div>@Characteristic.Name</div>
+    }
+<button type="button" @onclick="()=>SetCharacteristic()">ドロー</button>
+

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Components.Web;
 using ICB.Data;
 using ICB.Repositories.Interfaces;
 using ICB.Repositories;
+using ICB.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddTransient<ICardRepository, DraftCardRepository>();
+builder.Services.AddTransient<CardService>();
 
 var app = builder.Build();
 
