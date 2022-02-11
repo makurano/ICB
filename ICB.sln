@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1700.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICB", "ICB\ICB.csproj", "{D39B0292-8317-43B2-B96F-EEFD841FB1CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICB", "src\ICB\ICB.csproj", "{D39B0292-8317-43B2-B96F-EEFD841FB1CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICB.Tests", "ICB.Tests\ICB.Tests.csproj", "{CF388CD6-61EC-426D-BCD3-7C5B2CF21270}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICB.Tests", "test\ICB.Tests\ICB.Tests.csproj", "{CF388CD6-61EC-426D-BCD3-7C5B2CF21270}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

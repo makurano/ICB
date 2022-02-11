@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ICB\ICB.csproj" />
+    <ProjectReference Include="..\..\src\ICB\ICB.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Services\" />
