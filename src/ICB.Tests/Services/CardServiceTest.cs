@@ -2,7 +2,7 @@
 using ICB.Services;
 using NUnit.Framework;
 
-namespace ICB.Tests;
+namespace ICB.Tests.Services;
 
 public class CardServiceTest
 {
