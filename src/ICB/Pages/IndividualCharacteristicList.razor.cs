@@ -1,6 +1,5 @@
-﻿using System;
+﻿using ICB.Models;
 using ICB.Services;
-using ICB.Models;
 using Microsoft.AspNetCore.Components;
 
 namespace ICB.Pages

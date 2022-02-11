@@ -1,7 +1,6 @@
-﻿using System;
+﻿using System.Runtime.CompilerServices;
 using ICB.Models;
 using ICB.Repositories.Interfaces;
-using System.Runtime.CompilerServices;
 [assembly: InternalsVisibleTo("ICB.Tests")]
 
 namespace ICB.Services

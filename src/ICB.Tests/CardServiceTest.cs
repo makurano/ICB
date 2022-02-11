@@ -1,6 +1,4 @@
-﻿using System;
-using System.Linq;
-using ICB.Repositories;
+﻿using ICB.Repositories;
 using ICB.Services;
 using NUnit.Framework;
 

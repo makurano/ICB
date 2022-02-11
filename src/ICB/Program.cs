@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
-using ICB.Data;
-using ICB.Repositories.Interfaces;
+﻿using ICB.Data;
 using ICB.Repositories;
+using ICB.Repositories.Interfaces;
 using ICB.Services;
 
 var builder = WebApplication.CreateBuilder(args);

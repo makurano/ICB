@@ -1,5 +1,4 @@
-﻿using System;
-using ICB.Models;
+﻿using ICB.Models;
 
 namespace ICB.Repositories.Interfaces
 {
