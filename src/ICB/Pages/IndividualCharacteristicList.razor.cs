@@ -2,19 +2,18 @@
 using ICB.Services;
 using Microsoft.AspNetCore.Components;
 
-namespace ICB.Pages
+namespace ICB.Pages;
+
+public partial class IndividualCharacteristicList
 {
-	public partial class IndividualCharacteristicList
-	{
-		[Inject]
-		private CardService _service { get; set; }
+    [Inject]
+    private CardService _service { get; set; }
 
-		private Characteristic Characteristic { get; set; }
+    private Characteristic Characteristic { get; set; }
 
-		private void SetCharacteristic()
-        {
-			Characteristic = _service.Next();
-        }
-	}
+    private void SetCharacteristic()
+    {
+        Characteristic = _service.Next();
+    }
 }
 

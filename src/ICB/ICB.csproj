@@ -18,4 +18,10 @@
     <Folder Include="Repositories\Interfaces\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\aohar\Documents\GitHub\ICB\src\ICB\.editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\aohar\Documents\GitHub\ICB\src\ICB\.editorconfig" />
+  </ItemGroup>
 </Project>

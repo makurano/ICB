@@ -1,12 +1,11 @@
-namespace ICB.Models
+﻿namespace ICB.Models;
+
+public class Characteristic
 {
-	public class Characteristic
-	{
-		public int Id { get; set; }
+    public int Id { get; set; }
 
-		public string Name { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
 
-		public bool IsRare { get; set; }
-	}
+    public bool IsRare { get; set; }
 }
 

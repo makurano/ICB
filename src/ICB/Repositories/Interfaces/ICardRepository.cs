@@ -1,10 +1,9 @@
 ﻿using ICB.Models;
 
-namespace ICB.Repositories.Interfaces
+namespace ICB.Repositories.Interfaces;
+
+public interface ICardRepository
 {
-	public interface ICardRepository
-	{
-		public List<Characteristic> GetCharacteristics();
-	}
+    public List<Characteristic> GetCharacteristics();
 }
 
