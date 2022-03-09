@@ -2,9 +2,32 @@
 
 <h3>Component1</h3>
 
-@if (Characteristic is not null)
-    {
-        <div>@Characteristic.Name</div>
-    }
-<button type="button" @onclick="()=>SetCharacteristic()">ドロー</button>
+<div class="container">
+    <div class="row">
+        <div class="col">
+        @if (Players.Single(x => x.Id == 1).Items is not null)
+        {
+            <ul>
+            @foreach(var item in Players.Single(x => x.Id == 1).Items)
+            {
+                <li>@item.Name</li>
+            }
+            </ul>
+        }
+            <button type="button" @onclick="()=>SetCharacteristic(1)">ドロー 1</button>
+        </div>
 
+        <div class="col">
+        @if (Players.Single(x => x.Id == 2).Items is not null)
+        {
+            <ul>
+            @foreach(var item in Players.Single(x => x.Id == 2).Items)
+            {
+                <li>@item.Name</li>
+            }
+            </ul>
+        }
+            <button type="button" @onclick="()=>SetCharacteristic(2)">ドロー 2</button>
+        </div>
+    </div>
+</div>
