@@ -8,7 +8,7 @@ namespace ICB.Pages;
 public partial class IndividualCharacteristicList
 {
     [Inject]
-    private CardService _service { get; set; }
+    private CardService _service { get; set; } = null!;
 
     private List<Player> Players { get; set; } = new();
 
